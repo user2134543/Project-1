@@ -1,0 +1,7 @@
+from qgis.core import QgsProject, QgsVectorLayer
+
+zoning_layer = QgsVectorLayer('/path/to/zoning_layer.shp', 'Zoning', 'ogr')
+QgsProject.instance().addMapLayer(zoning_layer)
+
+population_layer = QgsVectorLayer('/path/to/population_layer.shp', 'Population', 'ogr')
+QgsProject.instance().addMapLayer(population_layer)
